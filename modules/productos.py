@@ -7,7 +7,7 @@ class productos:
         self.cursor = self.conexion.cursor()
 
     def consultar(self):
-        sql = "SELECT * FROM inventario"
+        sql = "SELECT * FROM productos"
         self.cursor.execute(sql)
         resultado = self.cursor.fetchall()
         return resultado

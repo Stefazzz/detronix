@@ -4,8 +4,8 @@ import mysql.connector
 
 app = Flask(__name__)
 
-db = mysql.connector.connect(host='localhost', port='3306',  user='root', password='', database='detronix')
-
+db = mysql.connector.connect( user='root', password='', host='localhost', database='detronix1')
+#db = mysql.connector.connect( user='admin', password='stefa123', host='detronix1.cnkgwq0s8fnb.us-east-2.rds.amazonaws.com', database='db1')
 
 CARPETAU = os.path.join('uploads')
 app.config['CARPETAU']=CARPETAU
