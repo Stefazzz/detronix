@@ -7,15 +7,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 80px;
 }
 #header{
     display: flex;
-    width: 100vw;
     align-items: center;
     justify-content: center;
     background-color: #0978B0;
     color: #f3f5f6;
-    height: 55px;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;       
 }
 #logo{
     width: 50px;
@@ -40,18 +45,44 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px 10px;
+    margin: 30px 25px;
     border: #2D3133 solid 3px;
-
+    position: relative;
 }
 .info{
     font-size: 20px;
-    font-family: 'Times New Roman';
-    color: #250082;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+.titulo{
+    font-size: 40px;
+}
+.cont_titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0978B0;
+}
+.descri{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    
+}
+.precio{
+    font-size: 25px;
 }
 .boton{
     display: flex;
     justify-content: center;
+}
+.btn{
+    padding: 15px;
+    font-size: 15px;
+    background-color: #1D6385;
+    margin: 15px;
+    color: #f3f5f6;
 }
 .compra{
     background-color: #1D6385;
@@ -61,20 +92,60 @@ body{
     max-width: 150px;
 }
 .imagenes{
-    width: 150px;
+    width: 100%;
+    padding: 10px;
 }
-.qr{
-    display: none;
-}
+    .imagenes .img_bd{
+        width: 100%;
+        object-fit: contain;
+    }
+    .qr {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+    }
+    
+    .qr figure img {
+        width: 300px;
+    }
+    
+    .cerrar {
+        position: absolute;
+        top: 10px;             
+        right: 20px;            
+        cursor: pointer;
+    }
+    
+    .cerrar h1 {
+        color: #fff;
+        font-size: 30px;
+        margin: 0;
+    }
+    #titu{
+        color: #f3f5f6;
+    }
+    
 
 @media only screen and (min-width: 768px){
     #cuerpo{
-        grid-template-columns: repeat(2, 180px);
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        gap: 35px;
     }
 }
 
 @media only screen and (min-width: 1366px){
     #cuerpo{
-        grid-template-columns: repeat(4, 180px);
+        padding: 0 10%;
+        grid-template-columns: repeat(4, 350px);
+        gap: 40px;
     }
 }
