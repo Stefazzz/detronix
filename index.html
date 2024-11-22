@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/cajas.css">
+    <link rel="shortcut icon" href="../static/img/logo.jpeg" type="image/x-icon">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="../static/js/btn.js"></script>
+    <!-- esto es para poner el logo de arriba -->
+    <title>Detronix</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="contenedortitulo">DETRONIX</h1>
+    </header>
+    <main id="cuerpo">
+        <!-- Producto 1 -->
+        <div class="cajas">
+            <figure class="imagenes">
+                <img class="img_bd" src="../static/img/producto1.jpg" alt="Kit 1">
+            </figure>
+            <div class="cont_titulo">
+                <h4 class="info titulo">Kit 1</h4>
+            </div>
+            <div class="descri">
+                <h4 class="info">10 resistencias 1K</h4>
+                <h4 class="info">10 resistencias 10K</h4>
+                <h4 class="info">10 resistencias 15K</h4>
+                <h4 class="info">10 resistencias 22K</h4>
+                <br>
+
+            </div>
+            <h4 class="info precio">$6.000</h4>
+            <div class="boton">
+                <button class="btn compra" id="btn_1">Comprar</button>
+            </div>
+            <div id="qr_1" class="qr" style="display:none;">
+                <div class="cerrar">
+                    <h1 id="cerrar_1" class="cerra">X</h1>
+                </div>
+                <figure>
+                    <img src="../static/img/qr1.png" alt="Codigo QR de Producto 1">
+                </figure>
+
+                <div class="bancolombia-button">
+                    <br>
+                    <h1 id="titu">Escanea con</h1>
+                    <br>
+                    <img src="../static/img/logo_bancolombia.png" alt="Bancolombia" class="bancolombia-logo">
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="cajas">
+            <figure class="imagenes">
+                <img class="img_bd" src="../static/img/producto2.jpg" alt="Kit 2">
+            </figure>
+            <div class="cont_titulo">
+                <h4 class="info titulo">Kit 2</h4>
+            </div>
+            <div class="descri">
+                <h4 class="info">10 resistencias 1K</h4>
+                <h4 class="info">10 diodos LED</h4>
+                <h4 class="info">10 capacitores 1uf</h4>
+                <h4 class="info">10 diodos 1N4148</h4>
+                <br>
+
+            </div>
+            <h4 class="info precio">$7.500</h4>
+            <div class="boton">
+                <button class="btn compra" id="btn_2">Comprar</button>
+            </div>
+            <div id="qr_2" class="qr" style="display:none;">
+                <div class="cerrar">
+                    <h1 id="cerrar_2" class="cerra">X</h1>
+                </div>
+                <figure>
+                    <img src="../static/img/qr2.png" alt="Codigo QR de Producto 2">
+                </figure>
+                <div class="bancolombia-button">
+                    <br>
+                    <h1 id="titu">Escanea con</h1>
+                    <br>
+                    <img src="../static/img/logo_bancolombia.png" alt="Bancolombia" class="bancolombia-logo">
+                </div>
+            </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="cajas">
+            <figure class="imagenes">
+                <img class="img_bd" src="../static/img/producto3.jpg" alt="Kit 3">
+            </figure>
+            <div class="cont_titulo">
+                <h4 class="info titulo">Kit 3</h4>
+            </div>
+            <div class="descri">
+                <h4 class="info">10 transistores 2N2222</h4>
+                <h4 class="info">10 resistencias 100K</h4>
+                <h4 class="info">10 macho-hembra</h4>
+                <h4 class="info">10 macho-macho</h4>
+                <br>
+
+            </div>
+            <h4 class="info precio">$6.500</h4>
+            <div class="boton">
+                <button class="btn compra" id="btn_3">Comprar</button>
+            </div>
+            <div id="qr_3" class="qr" style="display:none;">
+                <div class="cerrar">
+                    <h1 id="cerrar_3" class="cerra">X</h1>
+                </div>
+                <figure>
+                    <img src="../static/img/qr3.png" alt="Codigo QR de Producto 3">
+                </figure>
+                <div class="bancolombia-button">
+                    <br>
+                    <h1 id="titu">Escanea con</h1>
+                    <br>
+                    <img src="../static/img/logo_bancolombia.png" alt="Bancolombia" class="bancolombia-logo">
+                </div>
+            </div>
+        </div>
+        <!-- Producto 4 -->
+        <div class="cajas">
+            <figure class="imagenes">
+                <img class="img_bd" src="../static/img/producto4.jpg" alt="Kit 4">
+            </figure>
+            <div class="cont_titulo">
+                <h4 class="info titulo">Kit 4</h4>
+            </div>
+            <div class="descri">
+                <h4 class="info">10 C electrolitico 0.22uf</h4>
+                <h4 class="info">10 C electrolitico 10uf</h4>
+                <h4 class="info">10 C electrolitico 4.7mf</h4>
+                <h4 class="info">5 diodos 1N5822</h4>
+                <br>
+            </div>
+
+            <h4 class="info precio">$7.000</h4>
+            <div class="boton">
+                <button class="btn compra" id="btn_4">Comprar</button>
+            </div>
+            <div id="qr_4" class="qr" style="display:none;">
+                <div class="cerrar">
+                    <h1 id="cerrar_4" class="cerra">X</h1>
+                </div>
+                <figure>
+                    <img src="../static/img/qr4.png" alt="Codigo QR de Producto 4">
+                </figure>
+                <div class="bancolombia-button">
+                    <br>
+
+                    <h1 id="titu">Escanea con</h1>
+                    <br>
+                    <img src="../static/img/logo_bancolombia.png" alt="Bancolombia" class="bancolombia-logo">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
